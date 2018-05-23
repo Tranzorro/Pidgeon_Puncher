@@ -10,7 +10,7 @@ public class punch : MonoBehaviour {
         //Debug.Log("collision name = " + other.gameObject.name);
         if (other.gameObject.tag == "Pigeon")
         {
-            Debug.Log("de-rezzing self");
+            Debug.Log("PUNCHED!!!!");
             Destroy(other.gameObject);
         }
 

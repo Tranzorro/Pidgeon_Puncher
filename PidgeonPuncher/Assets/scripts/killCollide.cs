@@ -10,7 +10,7 @@ public class killCollide : MonoBehaviour {
         //Debug.Log("collision name = " + other.gameObject.name);
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("de-rezzing self");
+            Debug.Log("touched player. now i am the dead.");
             Destroy(gameObject);
         }
 
