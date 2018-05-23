@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class pigeonSpawn : MonoBehaviour
 {
-
-    public float spawnTime = 5f;
+    public GameObject spawnPlane;
     //The amount of time between each spawn.
-    public float spawnDelay = 3f;
+    public float spawnTime = 5f;
     //The amount of time before spawning starts.
-    public GameObject[] pigeon;
-    //Array of enemy prefabs.
-    public Vector3 enposition;
+    public float spawnDelay = 3f;
+    public GameObject pigeon;
+    public GameObject player;
 
     void Start()
     {
@@ -21,8 +20,7 @@ public class pigeonSpawn : MonoBehaviour
 
     void Spawn()
     {
-        //Instantiate a random enemy.
-        int enemyIndex = Random.Range(0, pigeon.Length);
-        Instantiate(pigeon[enemyIndex], enposition, transform.rotation);
+        //Instantiate a pigeon
+        Instantiate(pigeon, spawnPlane.transform.position, spawnPlane.transform.rotation, player.transform);
     }
 }

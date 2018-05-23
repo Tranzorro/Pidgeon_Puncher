@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class killCollide : MonoBehaviour {
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider other)
     {
         //check collision name
-        Debug.Log("collision name = " + col.gameObject.name);
-        if (col.gameObject.tag == "Player")
+        //Debug.Log("collision name = " + other.gameObject.name);
+        if (other.gameObject.tag == "Player")
         {
             Debug.Log("de-rezzing self");
             Destroy(gameObject);

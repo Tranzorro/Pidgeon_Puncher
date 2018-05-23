@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/pidgeon-Puncher.unity
+  isLoaded: 1
+  isActive: 1
