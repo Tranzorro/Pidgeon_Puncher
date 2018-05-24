@@ -20,19 +20,19 @@ public class pigeonSpawn : MonoBehaviour
 
     public Vector3 GetRandomSpawnPos()
     {
-        Mesh planeMesh = gameObject.GetComponent<MeshFilter>().mesh;
-        Bounds bounds = planeMesh.bounds;
+        Mesh spawnPlane = gameObject.GetComponent<MeshFilter>().mesh;
+        Bounds bounds = spawnPlane.bounds;
 
-        float minX = gameObject.transform.position.x - gameObject.transform.localScale.x * bounds.size.x * 0.5f;
-        float minZ = gameObject.transform.position.z - gameObject.transform.localScale.z * bounds.size.z * 0.5f;
+        float minX = gameObject.transform.localPosition.x - gameObject.transform.localScale.x * bounds.size.x * 0.5f;
+        float minY = gameObject.transform.localPosition.z - gameObject.transform.localScale.z * bounds.size.z * 0.5f;
 
-        Vector2 newVec = new Vector3(Random.Range (minX, -minX), gameObject.transform.position.y, Random.Range (minZ, -minZ));
+        Vector3 newVec = new Vector3(Random.Range (minX, -minX), Random.Range(minY, -minY), gameObject.transform.position.z);
         return newVec;
     }
 
     void Spawn()
     {
         //Instantiate a pigeon
-        Instantiate(pigeon, spawnPlane.transform.position/*GetRandomSpawnPos()*/, spawnPlane.transform.rotation, player.transform);
+        Instantiate(pigeon, GetRandomSpawnPos(), spawnPlane.transform.rotation, player.transform);
     }
 }
