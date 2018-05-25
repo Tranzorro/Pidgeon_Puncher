@@ -9,7 +9,9 @@ public class pigeonSpawn : MonoBehaviour
     public float spawnTime = 5f;
     //The amount of time before spawning starts.
     public float spawnDelay = 3f;
+    // the object to spawn
     public GameObject pigeon;
+    // what to parent to after spawning
     public GameObject player;
 
     void Start()
@@ -24,7 +26,7 @@ public class pigeonSpawn : MonoBehaviour
         Bounds bounds = spawnPlane.bounds;
 
         float minX = gameObject.transform.localPosition.x - gameObject.transform.localScale.x * bounds.size.x * 0.5f;
-        float minY = gameObject.transform.localPosition.z - gameObject.transform.localScale.z * bounds.size.z * 0.5f;
+        float minY = gameObject.transform.position.z - gameObject.transform.localScale.z * bounds.size.y * 0.5f;
 
         Vector3 newVec = new Vector3(Random.Range (minX, -minX), Random.Range(minY, -minY), gameObject.transform.position.z);
         return newVec;
@@ -33,6 +35,6 @@ public class pigeonSpawn : MonoBehaviour
     void Spawn()
     {
         //Instantiate a pigeon
-        Instantiate(pigeon, GetRandomSpawnPos(), spawnPlane.transform.rotation, player.transform);
+        Instantiate(pigeon, GetRandomSpawnPos(), spawnPlane.transform.localRotation, player.transform);
     }
 }

@@ -13,6 +13,11 @@ public class killCollide : MonoBehaviour {
             Debug.Log("touched player. now i am the dead.");
             Destroy(gameObject);
         }
+        if (other.gameObject.tag == "Horizon")
+        {
+            Debug.Log("GROUND PIGEONS ARE NOT ALLOWED");
+            Destroy(gameObject);
+        }
 
     }
 }
