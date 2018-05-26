@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33026905649324552}
   - component: {fileID: 65586323797119290}
   - component: {fileID: 23323517460669468}
-  - component: {fileID: 114958210061257046}
   - component: {fileID: 114437352763692524}
   - component: {fileID: 54509153682934958}
+  - component: {fileID: 114157328871439372}
   m_Layer: 0
   m_Name: pidgeon
   m_TagString: Pigeon
@@ -113,6 +113,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114157328871439372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1619107742842366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2b889847e00c543a37102c725aa48a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114437352763692524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,15 +137,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   speed: 5
---- !u!114 &114958210061257046
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1619107742842366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca2b889847e00c543a37102c725aa48a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthbar: {fileID: 0}

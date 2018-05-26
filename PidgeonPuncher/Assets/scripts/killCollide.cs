@@ -1,13 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class killCollide : MonoBehaviour{
 
-   // public GameObject healthbar;
-
-    //private playerHealth refscript;
 
     void OnTriggerEnter(Collider other)
     {
@@ -17,7 +13,6 @@ public class killCollide : MonoBehaviour{
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("touched player. now i am the dead.");
-            DealDamage(1);
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "Horizon")
@@ -26,16 +21,5 @@ public class killCollide : MonoBehaviour{
             Destroy(gameObject);
         }
     }
-    public static void DealDamage(float damageValue)
-    {
-        
-        playerHealth.CurrentHealth -= damageValue;
-        playerHealth.Healthbar.value = playerHealth.CalculateHealth();
-
-        if (playerHealth.CurrentHealth <= 0)
-            playerHealth.Die();
-    }
-
-
     
 }
