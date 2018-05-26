@@ -26,7 +26,7 @@ public class killCollide : MonoBehaviour{
             Destroy(gameObject);
         }
     }
-    void DealDamage(float damageValue)
+    public static void DealDamage(float damageValue)
     {
         
         playerHealth.CurrentHealth -= damageValue;
