@@ -548,6 +548,10 @@ Prefab:
       propertyPath: m_TagString
       value: Puncher
       objectReference: {fileID: 0}
+    - target: {fileID: 1763581937551660, guid: 8246269d60b9f99429184334be732a3c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8246269d60b9f99429184334be732a3c, type: 2}
   m_IsPrefabParent: 0
@@ -947,7 +951,7 @@ Behaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368068870}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1368068873
 Camera:
   m_ObjectHideFlags: 0
@@ -1330,7 +1334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.000061035156, y: 29.1}
+  m_AnchoredPosition: {x: 0.000061035156, y: 29.099976}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1722496470

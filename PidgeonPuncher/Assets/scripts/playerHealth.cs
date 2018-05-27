@@ -18,7 +18,7 @@ public class playerHealth : MonoBehaviour {
     void Start () {
         // reset hp to max at start
         Debug.Log("health restored. good luck!");
-        MaxHealth = 20f;
+        MaxHealth = 3f;
 
         CurrentHealth = MaxHealth;
         //Healthbar.value = CalculateHealth();
@@ -49,6 +49,7 @@ public class playerHealth : MonoBehaviour {
     {
         CurrentHealth = 0;
         Debug.Log("Grossed out by pigeons, Game Over.");
-        SceneManager.LoadScene("GameOverMenu",LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync("GameOverMenu");
+        SceneManager.UnloadSceneAsync("pidgeon-Puncher");
     }
 }
