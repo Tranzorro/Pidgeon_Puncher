@@ -7,7 +7,7 @@ public class playGame : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("pidgeon-Puncher");
+        SceneManager.LoadScene("pidgeon-Puncher", LoadSceneMode.Single);
 
     }
 

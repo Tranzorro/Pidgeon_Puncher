@@ -12,15 +12,12 @@ public class playerHealth : MonoBehaviour {
     public  Slider Healthbar;
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Pigeon")
-            DealDamage(1);
-    }
+
 
     // Use this for initialization
     void Start () {
         // reset hp to max at start
+        Debug.Log("health restored. good luck!");
         MaxHealth = 20f;
 
         CurrentHealth = MaxHealth;
@@ -40,10 +37,18 @@ public class playerHealth : MonoBehaviour {
     {
         return CurrentHealth / MaxHealth;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Pigeon")
+            DealDamage(1);
+    }
+
+
     void Die()
     {
         CurrentHealth = 0;
         Debug.Log("Grossed out by pigeons, Game Over.");
-        SceneManager.LoadScene("GameOverMenu");
+        SceneManager.LoadScene("GameOverMenu",LoadSceneMode.Single);
     }
 }
