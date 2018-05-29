@@ -50,6 +50,5 @@ public class playerHealth : MonoBehaviour {
         CurrentHealth = 0;
         Debug.Log("Grossed out by pigeons, Game Over.");
         SceneManager.LoadSceneAsync("GameOverMenu");
-        SceneManager.UnloadSceneAsync("pidgeon-Puncher");
     }
 }

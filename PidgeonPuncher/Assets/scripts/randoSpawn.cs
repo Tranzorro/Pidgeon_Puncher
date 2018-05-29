@@ -26,6 +26,6 @@ public class randoSpawn : MonoBehaviour {
         spawnDelay = Random.Range(0f, 1f);*/
 
         //Instantiate a pigeon
-        Instantiate(pigeon, spawner.transform.position, spawner.transform.localRotation, player.transform);
+        Instantiate(pigeon, spawner.transform.position, spawner.transform.rotation, player.transform);
     }
 }

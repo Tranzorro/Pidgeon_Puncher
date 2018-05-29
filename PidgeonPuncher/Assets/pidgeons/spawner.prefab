@@ -113,7 +113,7 @@ MonoBehaviour:
   spawnPlane: {fileID: 1298801581694558}
   spawnTime: 1
   spawnDelay: 1
-  pigeon: {fileID: 1619107742842366, guid: db12bffd62695734d9a6f0574f255e7f, type: 2}
+  pigeon: {fileID: 100012, guid: 824628195da2dd94a9c79579e93e8de5, type: 3}
   player: {fileID: 0}
 --- !u!362 &362843003001174020
 WorldAnchor:

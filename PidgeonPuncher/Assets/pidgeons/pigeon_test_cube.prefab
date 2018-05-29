@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 54509153682934958}
   - component: {fileID: 114157328871439372}
   m_Layer: 0
-  m_Name: pidgeon
+  m_Name: pigeon_test_cube
   m_TagString: Pigeon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
