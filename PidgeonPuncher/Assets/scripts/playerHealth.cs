@@ -6,49 +6,34 @@ using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour {
 
-    public float CurrentHealth { get; set; }
-    public float MaxHealth { get; set; }
+    public float CurrentHealth;
+    public float MaxHealth;
 
     public  Slider Healthbar;
 
 
-
-
-    // Use this for initialization
-    void Start () {
-        // reset hp to max at start
-        Debug.Log("health restored. good luck!");
-        MaxHealth = 3f;
-
-        CurrentHealth = MaxHealth;
-        //Healthbar.value = CalculateHealth();
-        
-	}
-    void DealDamage(float damageValue)
+    public void ChangeHealth(float amount)
     {
-        Debug.Log("you took damage!");
-        CurrentHealth -= damageValue;
-        Healthbar.value = CalculateHealth();
+        CurrentHealth += amount;
+        CurrentHealth = Mathf.Clamp(CurrentHealth, 0f, MaxHealth);
 
-        if (CurrentHealth <= 0)
-            Die();
+        // Healthbar.value = CurrentHealth / MaxHealth;
+        Healthbar.value = CurrentHealth;
     }
-    float CalculateHealth()
-    {
-        return CurrentHealth / MaxHealth;
-    }
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Pigeon")
-            DealDamage(1);
+            ChangeHealth(-1f);
+        if (CurrentHealth <= 0f)
+            Die();
     }
-
 
     void Die()
     {
-        CurrentHealth = 0;
+        //CurrentHealth = 0;
         Debug.Log("Grossed out by pigeons, Game Over.");
-        SceneManager.LoadSceneAsync("GameOverMenu");
+        SceneManager.LoadScene("GameOverMenu", LoadSceneMode.Single);
     }
 }

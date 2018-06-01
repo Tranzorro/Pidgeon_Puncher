@@ -59,5 +59,5 @@ public class ActiveateCameraBg : MonoBehaviour {
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
     }
 
-
+    
 }

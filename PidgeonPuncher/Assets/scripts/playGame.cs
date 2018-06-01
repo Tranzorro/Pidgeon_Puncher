@@ -7,13 +7,19 @@ public class playGame : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("pidgeon-Puncher", LoadSceneMode.Single);
+        SceneManager.LoadScene("test_Scene", LoadSceneMode.Single);
 
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOverMenu", LoadSceneMode.Single);
+
     }
 
 }
