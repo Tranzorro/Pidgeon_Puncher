@@ -20,6 +20,11 @@ public class killCollide : MonoBehaviour{
             Debug.Log("GROUND PIGEONS ARE NOT ALLOWED");
             Destroy(gameObject);
         }
+        if (other.gameObject.tag == "Killzone")
+        {
+            Debug.Log("hit the fan, splat!");
+            Destroy(gameObject);
+        }
     }
     
 }

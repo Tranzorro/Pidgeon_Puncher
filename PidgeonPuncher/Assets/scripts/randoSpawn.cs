@@ -10,9 +10,10 @@ public class randoSpawn : MonoBehaviour {
     //The amount of time before spawning starts.
     public float spawnDelay = 1f;
     // the object to spawn
-    public GameObject pigeon;
+    public GameObject Item;
     // what to parent to after spawning
     public GameObject player;
+
 
     // Use this for initialization
     void Start () {
@@ -20,12 +21,14 @@ public class randoSpawn : MonoBehaviour {
         InvokeRepeating("Spawn", spawnDelay, spawnTime);
     }
 
+
+
     void Spawn()
     {
         /*spawnTime = Random.Range(0f, 2f);
         spawnDelay = Random.Range(0f, 1f);*/
 
         //Instantiate a pigeon
-        Instantiate(pigeon, spawner.transform.position, spawner.transform.rotation, player.transform);
+        Instantiate(Item, spawner.transform.position, spawner.transform.rotation, player.transform);
     }
 }

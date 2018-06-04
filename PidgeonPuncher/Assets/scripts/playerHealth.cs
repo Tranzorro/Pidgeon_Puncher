@@ -24,7 +24,7 @@ public class playerHealth : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Pigeon")
+        if (other.gameObject.tag == "poop")
             ChangeHealth(-1f);
         if (CurrentHealth <= 0f)
             Die();

@@ -14,6 +14,8 @@ public class pigeonSpawn : MonoBehaviour
     // what to parent to after spawning
     public GameObject player;
 
+
+
     void Start()
     {
         //Start calling the Spawn function repeatedly after a delay.
@@ -31,6 +33,8 @@ public class pigeonSpawn : MonoBehaviour
         Vector3 newVec = new Vector3(Random.Range (minX, -minX), Random.Range(minY, -minY), gameObject.transform.position.z);
         return newVec;
     }
+
+
 
     void Spawn()
     {
