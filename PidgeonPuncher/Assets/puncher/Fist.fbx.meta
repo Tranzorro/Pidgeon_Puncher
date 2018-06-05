@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 92ebf97bde2c48947b25e0c33adb5ae8
-timeCreated: 1528209108
+guid: 5bea709a71293b141bf8cdac4c2c7838
+timeCreated: 1528222161
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -10,18 +10,18 @@ ModelImporter:
     100004: Bone.016
     100006: Bone.017
     100008: Bone.017_end
-    100010: forearm
-    100012: indexbase
-    100014: indexmid
-    100016: indextip
-    100018: indextip_end
-    100020: middlebase
-    100022: middlemid
-    100024: middletip
-    100026: middletip_end
-    100028: palm
-    100030: pinkybase
-    100032: //RootNode
+    100010: //RootNode
+    100012: forearm
+    100014: indexbase
+    100016: indexmid
+    100018: indextip
+    100020: indextip_end
+    100022: middlebase
+    100024: middlemid
+    100026: middletip
+    100028: middletip_end
+    100030: palm
+    100032: pinkybase
     100034: ringbase
     100036: ringmid
     100038: ringtip
@@ -37,18 +37,18 @@ ModelImporter:
     400004: Bone.016
     400006: Bone.017
     400008: Bone.017_end
-    400010: forearm
-    400012: indexbase
-    400014: indexmid
-    400016: indextip
-    400018: indextip_end
-    400020: middlebase
-    400022: middlemid
-    400024: middletip
-    400026: middletip_end
-    400028: palm
-    400030: pinkybase
-    400032: //RootNode
+    400010: //RootNode
+    400012: forearm
+    400014: indexbase
+    400016: indexmid
+    400018: indextip
+    400020: indextip_end
+    400022: middlebase
+    400024: middlemid
+    400026: middletip
+    400028: middletip_end
+    400030: palm
+    400032: pinkybase
     400034: ringbase
     400036: ringmid
     400038: ringtip
@@ -92,98 +92,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Armature|ArmatureAction
-      takeName: Armature|ArmatureAction
-      firstFrame: 0
-      lastFrame: 11
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|PUNCH
-      takeName: Armature|PUNCH
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|punch animation
-      takeName: Armature|punch animation
-      firstFrame: 0
-      lastFrame: 11
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events:
-      - time: 0
-        functionName: fistPunch
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
