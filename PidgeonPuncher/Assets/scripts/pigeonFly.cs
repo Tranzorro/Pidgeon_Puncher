@@ -13,15 +13,15 @@ public class pigeonFly : MonoBehaviour
 
     private void Start()
     {
-        poopScript.enabled = false;
         poopScript = GetComponent<randoSpawn>();
+        this.poopScript.enabled = false;
     }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "HoverPlane")
         {
             Debug.Log("HOVERING");
-            poopScript.enabled = true;
+            this.poopScript.enabled = true;
             StartCoroutine(FreezePigeon());
         }
     }
@@ -32,7 +32,7 @@ public class pigeonFly : MonoBehaviour
         speed = 0f;
         Debug.Log("I POOP ON YOU");
         yield return new WaitForSeconds(3);
-        poopScript.enabled = false;
+        this.poopScript.enabled = false;
         speed = -4f;
         Debug.Log("I have completed the hovering code block");
     }

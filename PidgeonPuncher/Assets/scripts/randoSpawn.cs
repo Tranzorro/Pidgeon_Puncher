@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class randoSpawn : MonoBehaviour {
 
-    public GameObject spawner;
+   // public GameObject spawner;
     //The amount of time between each spawn.
     public float spawnTime = 1f;
     //The amount of time before spawning starts.
@@ -28,7 +28,7 @@ public class randoSpawn : MonoBehaviour {
         /*spawnTime = Random.Range(0f, 2f);
         spawnDelay = Random.Range(0f, 1f);*/
 
-        //Instantiate an item
-        Instantiate(Item, spawner.transform.position, spawner.transform.rotation, player.transform);
+        //Instantiate an item   do not use player.transform at the end of the chain for parenting, it fucks with the Destory functions.
+        Instantiate(Item, this.gameObject.transform.position, this.gameObject.transform.rotation/*, player.transform*/);
     }
 }

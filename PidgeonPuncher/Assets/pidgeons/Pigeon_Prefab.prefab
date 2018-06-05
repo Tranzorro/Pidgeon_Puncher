@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 23018734469384522}
   - component: {fileID: 114564872179636576}
   - component: {fileID: 114603076524943222}
-  - component: {fileID: 114860520616545096}
+  - component: {fileID: 114798671087011376}
   m_Layer: 0
   m_Name: Pigeon_Prefab
   m_TagString: Pigeon
@@ -1527,7 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ab59bdf8b0f88419ea6d9bf309dd12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poopScript: {fileID: 114860520616545096}
+  poopScript: {fileID: 0}
   hoverPlane: {fileID: 1165055593069310, guid: cb3955b26160a0d4ab927bebfbb926ee, type: 2}
   Player: {fileID: 4971256180418914, guid: dc96e918fe1e50342ac2df0688807e07, type: 2}
   speed: 5
@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2b889847e00c543a37102c725aa48a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114860520616545096
+--- !u!114 &114798671087011376
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1553,9 +1553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc49902bbbdd3b4795e688f59993395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 1066815515247834}
-  spawnTime: 0.1
-  spawnDelay: 0.1
+  spawnTime: 1
+  spawnDelay: 1
   Item: {fileID: 1629783506029786, guid: 58928318f6b307e4484f06fd1106d799, type: 2}
   player: {fileID: 1089168780800168, guid: dc96e918fe1e50342ac2df0688807e07, type: 2}
 --- !u!136 &136206588840609174
