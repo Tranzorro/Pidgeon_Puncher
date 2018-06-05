@@ -1528,8 +1528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poopScript: {fileID: 114860520616545096}
-  hoverPlane: {fileID: 0}
-  Player: {fileID: 0}
+  hoverPlane: {fileID: 1165055593069310, guid: cb3955b26160a0d4ab927bebfbb926ee, type: 2}
+  Player: {fileID: 4971256180418914, guid: dc96e918fe1e50342ac2df0688807e07, type: 2}
   speed: 5
 --- !u!114 &114603076524943222
 MonoBehaviour:
