@@ -57,6 +57,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -111,8 +112,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1bd23e1345cb6a4486740363170a750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splat: {fileID: 8300000, guid: 7f36b125f73d1cc42bcafff8634dee61, type: 3}
   CurrentHealth: 5
   MaxHealth: 5
+  Poo: []
+  Gui: {fileID: 0}
   Healthbar: {fileID: 0}
 --- !u!136 &136422186481083054
 CapsuleCollider:
