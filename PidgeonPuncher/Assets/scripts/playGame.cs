@@ -22,4 +22,14 @@ public class playGame : MonoBehaviour
 
     }
 
+    public void Options()
+    {
+        SceneManager.LoadScene("Options", LoadSceneMode.Single);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("StartMenu", LoadSceneMode.Single);
+    }
+
 }
