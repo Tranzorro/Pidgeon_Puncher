@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class playGame : MonoBehaviour
 {
+    public AudioSource musicVol;
+    public AudioSource sfxVol;
+
     public void PlayGame()
     {
         SceneManager.LoadScene("test_Scene", LoadSceneMode.Single);
+        musicVol.volume = PlayerSave.GetFloat("musicVol");
+        sfxVol.volume = PlayerSave.GetFloat("sfxVol");
 
     }
 

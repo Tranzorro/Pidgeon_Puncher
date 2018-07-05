@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 
-public class Manager : MonoBehaviour {
+public class AudioManager : MonoBehaviour {
 
-    public Slider musicVolumeSlider;
+   /* public Slider musicVolumeSlider;
+    public Slider sfxVolumeSlider;
     public VolumeSettings gameSettings;
     public AudioSource Master;
 
@@ -15,12 +16,17 @@ public class Manager : MonoBehaviour {
         gameSettings = new VolumeSettings();
 
         musicVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
+        sfxVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
 
     }
 
     public void OnMusicVolumeChange()
     {
-        Master.volume = gameSettings.musicVolume = musicVolumeSlider.value;
+        Master.volume = gameSettings.musicLvl = musicVolumeSlider.value;
+    }
+    public void OnSfxVolumeChange()
+    {
+        Master.volume = gameSettings.sfxLvl = sfxVolumeSlider.value;
     }
 
     public void SaveSettings()
@@ -32,8 +38,9 @@ public class Manager : MonoBehaviour {
     public void LoadSettings()
     {
         gameSettings = JsonUtility.FromJson<VolumeSettings>(File.ReadAllText(Application.persistentDataPath + "/gamesettings.json"));
-        musicVolumeSlider.value = gameSettings.musicVolume;
+        musicVolumeSlider.value = gameSettings.musicLvl;
+        sfxVolumeSlider.value = gameSettings.sfxLvl;
     }
 
-
+    */
 }

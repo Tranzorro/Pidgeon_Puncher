@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bf94b2c1961fb724381d26cf500b1842
+labels:
+- Save
+- PlayerPref
+- PlayerSave
+- Player
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

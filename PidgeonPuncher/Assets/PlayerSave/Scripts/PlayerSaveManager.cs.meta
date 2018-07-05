@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4cdd86bb1a4acaa458714c9346e28b1b
+labels:
+- PlayerPref
+- PlayerSave
+- Save
+- Manager
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
